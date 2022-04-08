@@ -9,7 +9,7 @@
   --color-lightgrey: #d3d3d3;
   --color-white: #fff;
   --border-check: 1px solid crimson;
-  --colorp-black: #000000;
+  --colorp-black: #000;
   --colorp-purpledark: #3e065f;
   --colorp-purple: #700b97;
   --colorp-purplelight: #8e05c2;
@@ -22,7 +22,6 @@
   margin: 0;
   padding: 0;
   font-family: var(--ff-lato);
-  /* border: var(--border-check); */
 }
 
 html {
@@ -54,6 +53,8 @@ html {
   margin-top: 1rem;
   margin-left: 1rem;
   width: 1.5rem;
+  background-color: transparent;
+  border: none;
 }
 
 .title {
@@ -72,7 +73,7 @@ html {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
-  background-clip: text;
+  background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
   padding-bottom: 1rem;
@@ -97,7 +98,6 @@ html {
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
-  text-align: justify;
   color: var(--color-black);
   text-align: center;
 }
@@ -139,7 +139,7 @@ html {
 .program h2 {
   margin: 1.5rem 0.5rem;
   font-size: 1.5rem;
-  letter-spacing: 0.05;
+  letter-spacing: 0.05rem;
 }
 
 .program .indicator {
@@ -148,7 +148,7 @@ html {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .cardsContainer {
@@ -168,7 +168,7 @@ html {
   align-content: center;
   background-color: var(--color-black);
   opacity: 0.7;
-  padding: 0.25rem;
+  padding: 1rem;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 2rem;
@@ -188,7 +188,7 @@ html {
 }
 
 .cardItem img {
-  height: fit-content;
+  height: auto;
   background-color: var(--color-white);
   align-self: center;
   width: 10%;
@@ -244,7 +244,7 @@ html {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
-  opacity:0.8;
+  opacity: 0.8;
 }
 
 .speakers h2 {
@@ -323,4 +323,71 @@ html {
 
 .more img {
   margin-left: 0.5rem;
+}
+
+/* ---------------Mobile Popup Window--------------- */
+.popupContainer {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
+  backdrop-filter: blur(8px);
+  background-color: transparent;
+  z-index: 1;
+}
+
+.modalBox {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  position: relative;
+  background-image: linear-gradient(315deg, var(--color-lightgrey), var(--color-black));
+  width: 90%;
+  height: 90vh;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closeBtn {
+  display: block;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background-color: transparent;
+  transition-duration: 250ms;
+}
+
+.closeBtn:hover {
+  transform: scale(2);
+}
+
+.ulLink {
+  /* display: block; */
+  list-style-type: none;
+}
+
+.liLinks a {
+  display: block;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 2rem;
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-family: var(--ff-cocogoose);
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--color-red);
+  transition-duration: 250ms;
+}
+
+.first {
+  padding-top: 5rem;
+}
+
+.liLinks a:hover {
+  background-color: var(--color-black);
+  opacity: 0.9;
+  transform: scale(1.1);
 }
