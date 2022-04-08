@@ -61,6 +61,7 @@ html {
   margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
+  align-content: flex-start;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -68,7 +69,14 @@ html {
   text-align: left;
 }
 
-.bgContainer h1 {
+.title h2 {
+  font-size: 1.5rem;
+  margin-right: auto;
+  text-align: left;
+  width: max-content;
+}
+
+.title h1 {
   font-family: var(--ff-cocogoose);
   font-size: 2rem;
   letter-spacing: 0.1rem;

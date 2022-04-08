@@ -59,3 +59,64 @@ function popup() {
 }
 
 menu.addEventListener('click', popup);
+
+// Create speaker section
+const speakers = document.querySelector('.speakers');
+
+const speakerObj = {
+  indicators: ['./assets/indicator.svg', './assets/indicator02.svg'],
+  profileImg: ['./assets/yokai.png', './assets/sohyeong.png', './assets/lila.png', './assets/kilnam.png', './assets/julia.png', './assets/ryan.png'],
+  name: ['Yochai Benkler', 'SohYeong Noh', 'Lila Tretikov', 'Kilnam Chon', 'Julia Leda', 'Ryan Merkley'],
+  title: ['Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School', 'Director of Art Centre Nabi and a board member of CC Korea', 'Executive Director of the Wikimedia Foundation', '', 'President of Young Pirates of Europe', 'CEO of Creative Commons, ex COO of the Mozilla Foundation'],
+  description: ['Benkler studies commons-based peer production, and published his seminal book The Wealth of Networks in 2006', 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.', 'Lila Tretikov is the Executive Director of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languages and used by nearly half a billion people around the world every month.', 'Kilnam Chon helped bring the Internet to Asia and is an outspoken advocate for the open web and digital commons. In 2012, he was inducted into the inaugural class of the Internet Society\'s (ISOC) Internet Hall of Fame.', 'European ingetration, political democracy and participation of youth through online as her major condem, Reda\'s report outlining potential changes to EU copyright law was approved by the Parliament in July.', 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open source movement.'],
+};
+
+window.onload = function getData() {
+  const divOne = document.createElement('div');
+  const h2One = document.createElement('h2');
+  h2One.textContent = 'Guest Speakers';
+  const imgOne = document.createElement('img');
+  imgOne.classList.add('indicator');
+  imgOne.setAttribute('src', speakerObj.indicators[0]);
+  divOne.append(h2One, imgOne);
+  speakers.append(divOne);
+
+  const divTwo = document.createElement('div');
+  divTwo.classList.add('speakersContainer');
+
+  const divThree = [];
+  const divFour = [];
+  const imgTwo = [];
+  const divFive = [];
+  const h2Two = [];
+  const h3One = [];
+  const imgThree = [];
+  const pOne = [];
+
+  for (let i = 0; i < 6; i += 1) {
+    divThree[i] = document.createElement('div');
+    divThree[i].classList.add('speakerItem');
+    divFour[i] = document.createElement('div');
+    imgTwo[i] = document.createElement('img');
+    imgTwo[i].setAttribute('src', speakerObj.profileImg[i]);
+    divFour[i].append(imgTwo[i]);
+    divThree[i].append(divFour[i]);
+    divFive[i] = document.createElement('div');
+    divFive[i].classList.add('profile');
+    h2Two[i] = document.createElement('h2');
+    h2Two[i].textContent = speakerObj.name[i];
+    divFive[i].append(h2Two[i]);
+    h3One[i] = document.createElement('h3');
+    h3One[i].textContent = speakerObj.title[i];
+    divFive[i].append(h3One[i]);
+    imgThree[i] = document.createElement('img');
+    imgThree[i].setAttribute('src', speakerObj.indicators[1]);
+    divFive[i].append(imgThree[i]);
+    pOne[i] = document.createElement('p');
+    pOne[i].textContent = speakerObj.description[i];
+    divFive[i].append(pOne[i]);
+    divThree[i].append(divFive[i]);
+    divTwo.append(divThree[i]);
+  }
+  speakers.append(divOne, divTwo);
+};
