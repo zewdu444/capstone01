@@ -93,30 +93,82 @@ window.onload = function getData() {
   const imgThree = [];
   const pOne = [];
 
-  for (let i = 0; i < 6; i += 1) {
-    divThree[i] = document.createElement('div');
-    divThree[i].classList.add('speakerItem');
-    divFour[i] = document.createElement('div');
-    imgTwo[i] = document.createElement('img');
-    imgTwo[i].setAttribute('src', speakerObj.profileImg[i]);
-    divFour[i].append(imgTwo[i]);
-    divThree[i].append(divFour[i]);
-    divFive[i] = document.createElement('div');
-    divFive[i].classList.add('profile');
-    h2Two[i] = document.createElement('h2');
-    h2Two[i].textContent = speakerObj.name[i];
-    divFive[i].append(h2Two[i]);
-    h3One[i] = document.createElement('h3');
-    h3One[i].textContent = speakerObj.title[i];
-    divFive[i].append(h3One[i]);
-    imgThree[i] = document.createElement('img');
-    imgThree[i].setAttribute('src', speakerObj.indicators[1]);
-    divFive[i].append(imgThree[i]);
-    pOne[i] = document.createElement('p');
-    pOne[i].textContent = speakerObj.description[i];
-    divFive[i].append(pOne[i]);
-    divThree[i].append(divFive[i]);
-    divTwo.append(divThree[i]);
+  function dynamic(index, num) {
+    for (let i = index; i < num; i += 1) {
+      divThree[i] = document.createElement('div');
+      divThree[i].classList.add('speakerItem');
+      divFour[i] = document.createElement('div');
+      imgTwo[i] = document.createElement('img');
+      imgTwo[i].setAttribute('src', speakerObj.profileImg[i]);
+      divFour[i].append(imgTwo[i]);
+      divThree[i].append(divFour[i]);
+      divFive[i] = document.createElement('div');
+      divFive[i].classList.add('profile');
+      h2Two[i] = document.createElement('h2');
+      h2Two[i].textContent = speakerObj.name[i];
+      divFive[i].append(h2Two[i]);
+      h3One[i] = document.createElement('h3');
+      h3One[i].textContent = speakerObj.title[i];
+      divFive[i].append(h3One[i]);
+      imgThree[i] = document.createElement('img');
+      imgThree[i].setAttribute('src', speakerObj.indicators[1]);
+      divFive[i].append(imgThree[i]);
+      pOne[i] = document.createElement('p');
+      pOne[i].textContent = speakerObj.description[i];
+      divFive[i].append(pOne[i]);
+      divThree[i].append(divFive[i]);
+      divTwo.append(divThree[i]);
+    }
+    speakers.append(divOne, divTwo);
   }
-  speakers.append(divOne, divTwo);
+
+  if (window.innerWidth < 768) {
+    dynamic(0, 2);
+  } else {
+    dynamic(0, 6);
+  }
+
+  if (window.innerWidth < 768) {
+    const more = document.createElement('div');
+    const moreBtn = document.createElement('button');
+    moreBtn.setAttribute('type', 'button');
+    moreBtn.classList.add('moreBtn');
+    moreBtn.textContent = 'More';
+    const moreImg = document.createElement('img');
+    moreImg.setAttribute('src', './assets/union.svg');
+    moreImg.classList.add('moreImg');
+    moreBtn.append(moreImg);
+    more.append(moreBtn);
+    speakers.append(more);
+
+    more.addEventListener('click', () => {
+      if (moreBtn.textContent === 'More') {
+        dynamic(2, 6);
+        moreBtn.textContent = 'Less';
+        moreImg.setAttribute('src', './assets/union.svg');
+        moreImg.classList.add('moreImg');
+        moreImg.classList.add('flipImg');
+        moreBtn.append(moreImg);
+        more.append(moreBtn);
+        speakers.append(more);
+      } else {
+        divThree[2].remove();
+        divThree[3].remove();
+        divThree[4].remove();
+        divThree[5].remove();
+        moreBtn.textContent = 'More';
+        moreImg.setAttribute('src', './assets/union.svg');
+        moreImg.classList.add('moreImg');
+        moreImg.classList.remove('flipImg');
+        moreBtn.append(moreImg);
+        more.append(moreBtn);
+        speakers.append(more);
+      }
+    });
+  }
+};
+
+// Reload during screen resize
+window.onresize = function checkWindow() {
+  window.location.reload();
 };

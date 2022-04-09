@@ -314,7 +314,7 @@ html {
 }
 
 /* ---------------More Section--------------- */
-.more button {
+.moreBtn {
   display: block;
   width: 90%;
   border: none;
@@ -329,8 +329,12 @@ html {
   background-color: var(--color-white);
 }
 
-.more img {
+.moreImg {
   margin-left: 0.5rem;
+}
+
+.flipImg {
+  transform: scaleY(-1);
 }
 
 /* ---------------Mobile Popup Window--------------- */
@@ -372,7 +376,6 @@ html {
 }
 
 .ulLink {
-  /* display: block; */
   list-style-type: none;
 }
 
