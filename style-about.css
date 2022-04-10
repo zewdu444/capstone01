@@ -1,4 +1,29 @@
 @import url(./style.css);
+@import url('http://fonts.cdnfonts.com/css/cocogoose?styles=44178');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --ff-cocogoose: 'Cocogoose';
+  --ff-lato: 'Lato';
+  --color-black: #272a31;
+  --color-red: #ec5242;
+  --color-lightgrey: #d3d3d3;
+  --color-white: #fff;
+  --border-check: 1px solid crimson;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-lato);
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* ---------------Partner Section in About.html--------------- */
 .partnerMobile {
@@ -175,11 +200,15 @@
   padding: 0 4rem;
 }
 
-.logoHistory p {
+.logoHistoryMobile {
   color: var(--color-black);
   padding: 0 3rem;
   opacity: 0.7;
   margin-bottom: 3rem;
+}
+
+.logoHistoryDesktop {
+  display: none;
 }
 
 .boxLogo {
@@ -224,7 +253,7 @@
 .pastEvent h2 {
   margin-top: 2rem;
   padding: 0 4rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 .pastEvent p {
@@ -246,14 +275,14 @@
   align-items: center;
   text-align: center;
   color: var(--color-white);
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
   margin-bottom: 2rem;
   transform: scale(1.1);
 }
 
 .pastEvent h4 {
-  font-size: smaller;
+  font-size: 0.75rem;
 }
 
 .event01 {
@@ -287,5 +316,86 @@
   .darkFooter {
     background-color: var(--color-black);
     color: var(--color-lightgrey);
+  }
+
+  .titleAbout {
+    margin-top: 7rem;
+  }
+
+  .titleAbout h2 {
+    font-size: 2.5rem;
+  }
+
+  .titleAbout h1 {
+    font-size: 3.5rem;
+  }
+
+  .subtitleAbout {
+    width: 60%;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .specificsAbout {
+    margin-top: 3rem;
+  }
+
+  .specificsAbout p {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .specificsAbout a {
+    text-decoration: underline;
+    color: var(--color-black);
+    opacity: 1;
+  }
+
+  .logoHistory h2 {
+    font-size: 2rem;
+  }
+
+  .logoHistory .indicator {
+    width: 2.5rem;
+  }
+
+  .logoHistoryMobile {
+    display: none;
+  }
+
+  .logoHistoryDesktop {
+    display: block;
+    color: var(--color-black);
+    padding: 0 3rem;
+    opacity: 0.7;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .pastEvent h2 {
+    font-size: 2rem;
+  }
+
+  .pastEvent .indicator {
+    width: 2.5rem;
+  }
+
+  .pastEvent ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pastEvent li {
+    height: 10rem;
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
   }
 }
