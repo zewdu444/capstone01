@@ -32,14 +32,14 @@ function popup() {
   liLink1.classList.add('first');
   aLink1.textContent = 'About';
   aLink1.addEventListener('click', () => {
-    aLink1.setAttribute('href', '#about');
+    aLink1.setAttribute('href', './about.html');
     popupContainer.style.display = 'none';
   });
   liLink1.append(aLink1);
   const liLink2 = document.createElement('li');
   const aLink2 = document.createElement('a');
   liLink2.classList.add('liLinks');
-  aLink2.setAttribute('href', '#program');
+  aLink2.setAttribute('href', './index.html#program');
   aLink2.textContent = 'Program';
   aLink2.addEventListener('click', () => {
     popupContainer.style.display = 'none';
@@ -48,13 +48,40 @@ function popup() {
   const liLink3 = document.createElement('li');
   const aLink3 = document.createElement('a');
   liLink3.classList.add('liLinks');
-  aLink3.setAttribute('href', '#speakers');
+  aLink3.setAttribute('href', './index.html#speakers');
   aLink3.textContent = 'Speakers';
   aLink3.addEventListener('click', () => {
     popupContainer.style.display = 'none';
   });
   liLink3.append(aLink3);
-  ulLink.append(liLink1, liLink2, liLink3);
+  const liLink4 = document.createElement('li');
+  const aLink4 = document.createElement('a');
+  liLink4.classList.add('liLinks');
+  aLink4.setAttribute('href', './about.html#partner');
+  aLink4.textContent = 'Partner';
+  aLink4.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  });
+  liLink4.append(aLink4);
+  const liLink5 = document.createElement('li');
+  const aLink5 = document.createElement('a');
+  liLink5.classList.add('liLinks');
+  aLink5.setAttribute('href', './about.html#pastEvent');
+  aLink5.textContent = 'Event';
+  aLink5.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  });
+  liLink5.append(aLink5);
+  const liLink6 = document.createElement('li');
+  const aLink6 = document.createElement('a');
+  liLink6.classList.add('liLinks');
+  aLink6.setAttribute('href', './index.html');
+  aLink6.textContent = 'Home';
+  aLink6.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  });
+  liLink6.append(aLink6);
+  ulLink.append(liLink1, liLink2, liLink3, liLink4, liLink5, liLink6);
   modalBox.append(ulLink);
 }
 

@@ -1,0 +1,291 @@
+@import url(./style.css);
+
+/* ---------------Partner Section in About.html--------------- */
+.partnerMobile {
+  display: block;
+  background-color: #2e3139;
+  color: var(--color-white);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  filter: grayscale(1px);
+  height: 100%;
+  backdrop-filter: blur(0.5rem);
+}
+
+.partnerMobile h2 {
+  margin: 1.2rem 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-lightgrey);
+}
+
+.partnerMobile .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.partnerMobile ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerMobile li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-lightgrey);
+  margin-top: 0.75rem;
+  margin-right: 1.5rem;
+}
+
+.partnerMobile ul img {
+  margin-right: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ---------------Footer Section in About.html--------------- */
+.footerMobile {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.footerMobile .logo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin-left: 1rem;
+  overflow: hidden;
+  height: 55px;
+  min-width: 20px;
+}
+
+.footerMobile p {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+}
+
+/* ---------------Main Section in About.html--------------- */
+.titleAbout {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  text-align: center;
+}
+
+.titleAbout h2 {
+  font-size: 1.5rem;
+}
+
+.titleAbout h1 {
+  font-family: var(--ff-cocogoose);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  background-image: linear-gradient(150deg, #ec5242 0%, red 0%, #d98324 74%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 1rem;
+}
+
+.subtitleAbout {
+  display: block;
+  width: 90%;
+  background-color: var(--color-white);
+  opacity: 0.7;
+  border: 2px solid var(--color-lightgrey);
+  color: var(--color-black);
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  padding: 0.25rem;
+}
+
+.specificsAbout {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.specificsAbout p {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.specificsAbout a {
+  text-decoration: underline;
+  color: var(--color-black);
+  opacity: 1;
+}
+
+/* ---------------Logo History Section in About.html--------------- */
+.logoHistory {
+  background-color: var(--color-white);
+  opacity: 0.9;
+  filter: grayscale(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.logoHistory .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.logoHistory h2 {
+  margin-top: 2rem;
+  padding: 0 4rem;
+}
+
+.logoHistory p {
+  color: var(--color-black);
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+}
+
+.boxLogo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 150px;
+  padding: 0;
+  border: 2px solid var(--color-lightgrey);
+  margin-bottom: 4rem;
+}
+
+/* ---------------Past Event Section in About.html--------------- */
+.pastEvent {
+  border-top: 2px solid var(--color-lightgrey);
+  background-color: var(--color-white);
+  opacity: 0.9;
+  filter: grayscale(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.pastEvent .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.pastEvent h2 {
+  margin-top: 2rem;
+  padding: 0 4rem;
+  font-size: 1rem;
+}
+
+.pastEvent p {
+  color: var(--color-black);
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+}
+
+.pastEvent ul {
+  list-style-type: none;
+}
+
+.pastEvent li {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  margin-bottom: 2rem;
+  transform: scale(1.1);
+}
+
+.pastEvent h4 {
+  font-size: smaller;
+}
+
+.event01 {
+  background-image: url(./assets/event01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset -100vw -100vh #ec534280;
+}
+
+.event02 {
+  background-image: url(./assets/event02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset -100vw -100vh #ec534280;
+}
+
+.pastEvent li:hover {
+  background-size: 110%;
+  box-shadow: none;
+  transition: all 350ms ease-out;
+}
+
+/* ---------------Media Query--------------- */
+@media (min-width: 768px) {
+  .partnerMobile {
+    display: none;
+  }
+
+  .darkFooter {
+    background-color: var(--color-black);
+    color: var(--color-lightgrey);
+  }
+}

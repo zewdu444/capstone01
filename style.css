@@ -401,7 +401,7 @@ footer {
   display: block;
   margin-left: 3rem;
   margin-right: 3rem;
-  padding: 2rem;
+  padding: 1.5rem;
   list-style-type: none;
   font-size: 1.2rem;
   font-family: var(--ff-cocogoose);
@@ -416,7 +416,6 @@ footer {
 }
 
 .liLinks a:hover {
-  background-color: var(--color-black);
   opacity: 0.9;
   transform: scale(1.1);
 }
@@ -466,7 +465,6 @@ footer {
     align-content: center;
     background-color: var(--color-white);
     color: var(--color-black);
-    height: fit-content;
   }
 
   .header ul {
@@ -531,6 +529,10 @@ footer {
     font-size: calc(1rem + 1.1vw);
   }
 
+  footer p {
+    margin-left: 8rem;
+  }
+
   .specifics p {
     margin-left: 4vw;
     font-size: calc(0.5rem + 1.1vw);
@@ -552,7 +554,6 @@ footer {
     margin: 0.25rem 0.1rem;
     width: 10rem;
     height: 15rem;
-
   }
 
   .cardItem:hover {
@@ -562,7 +563,7 @@ footer {
   .cardItem div {
     display: flex;
     flex-direction: column;
-    justify-content: first baseline;
+    justify-content: center;
     align-items: center;
     margin-left: 0;
     margin-right: 0;
@@ -582,7 +583,6 @@ footer {
     text-align: left;
     width: 25%;
     font-size: 0.65rem;
-    text-align: left;
     height: 100%;
   }
 
@@ -609,7 +609,6 @@ footer {
   .partner {
     display: block;
     background-color: #2e3139;
-    color: var(--color-lightgrey);
     padding-top: 1rem;
     padding-bottom: 3rem;
     text-align: center;
@@ -660,7 +659,7 @@ footer {
   footer {
     display: flex;
     flex-direction: row;
-    align-content: center;  
+    align-content: center;
     justify-content: center;
     padding: 1rem 0;
   }
@@ -674,9 +673,5 @@ footer {
     overflow: hidden;
     height: 55px;
     min-width: 200px;
-  }
-
-  footer p {
-    margin-left: 8rem;
   }
 }
