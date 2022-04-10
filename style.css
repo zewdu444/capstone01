@@ -9,10 +9,6 @@
   --color-lightgrey: #d3d3d3;
   --color-white: #fff;
   --border-check: 1px solid crimson;
-  --colorp-black: #000;
-  --colorp-purpledark: #3e065f;
-  --colorp-purple: #700b97;
-  --colorp-purplelight: #8e05c2;
 }
 
 *,
@@ -57,6 +53,10 @@ html {
   border: none;
 }
 
+nav {
+  display: none;
+}
+
 .title {
   margin-top: 2.5rem;
   display: flex;
@@ -80,7 +80,7 @@ html {
   font-family: var(--ff-cocogoose);
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  background-image: linear-gradient(315deg, #a40606 0%, #d98324 74%);
+  background-image: linear-gradient(150deg, #ec5242 0%, red 0%, #d98324 74%);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -123,18 +123,14 @@ html {
 
 .whiteout {
   background-color: var(--color-white);
-  height: 0.1vh;
+  height: 3vh;
 }
 
 /* ---------------Program Section--------------- */
 .program {
-  background-image: url(./assets/bg_program.jpg);
-  opacity: 0.9;
+  background-color: #2e3139;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2322252e' fill-opacity='1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   filter: grayscale(1px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   color: var(--color-white);
   display: flex;
@@ -142,12 +138,15 @@ html {
   align-content: center;
   text-align: center;
   backdrop-filter: blur(0.5rem);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .program h2 {
   margin: 1.5rem 0.5rem;
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
+  color: var(--color-lightgrey);
 }
 
 .program .indicator {
@@ -227,6 +226,14 @@ html {
   letter-spacing: 0.04rem;
   margin-bottom: 2rem;
   border: none;
+}
+
+.program button:hover {
+  color: var(--color-black);
+}
+
+.seeProgram {
+  display: none;
 }
 
 /* ---------------Speakers Section--------------- */
@@ -317,7 +324,6 @@ html {
 .moreBtn {
   display: block;
   width: 90%;
-  border: none;
   border: 2px solid var(--color-lightgrey);
   color: var(--color-black);
   padding: 14px 28px;
@@ -337,6 +343,16 @@ html {
   transform: scaleY(-1);
 }
 
+/* ---------------Partner Section--------------- */
+.partner {
+  display: none;
+}
+
+/* ---------------Footer Section--------------- */
+footer {
+  display: none;
+}
+
 /* ---------------Mobile Popup Window--------------- */
 .popupContainer {
   position: fixed;
@@ -353,7 +369,9 @@ html {
   flex-direction: column;
   align-content: flex-start;
   position: relative;
-  background-image: linear-gradient(315deg, var(--color-lightgrey), var(--color-black));
+  background-color: #2e3139;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2322252e' fill-opacity='1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  filter: grayscale(1px);
   width: 90%;
   height: 90vh;
   margin-top: 2rem;
@@ -389,7 +407,7 @@ html {
   font-family: var(--ff-cocogoose);
   cursor: pointer;
   text-decoration: none;
-  color: var(--color-red);
+  color: var(--color-lightgrey);
   transition-duration: 250ms;
 }
 
@@ -401,4 +419,264 @@ html {
   background-color: var(--color-black);
   opacity: 0.9;
   transform: scale(1.1);
+}
+
+/* ---------------Media Query--------------- */
+@media (min-width: 768px) {
+  .bgContainer {
+    height: 100vh;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    background-color: var(--color-black);
+    backdrop-filter: blur(2px);
+    color: var(--color-lightgrey);
+    list-style-type: none;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 4rem;
+  }
+
+  nav li {
+    list-style-type: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.25rem;
+    opacity: 0.7;
+    align-self: center;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    height: fit-content;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .WDPH {
+    border: 3px solid var(--color-red);
+  }
+
+  .header a,
+  .header a:visited {
+    text-decoration: none;
+    color: var(--color-black);
+    cursor: pointer;
+  }
+
+  .overflow {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 4rem;
+    overflow: hidden;
+    height: 55px;
+    min-width: 200px;
+  }
+
+  .title {
+    margin-top: 10vw;
+    margin-left: 4vw;
+  }
+
+  .title h2 {
+    font-size: calc(1.5rem + 1.5vw);
+  }
+
+  .title h1 {
+    font-size: calc(2rem + 2vw);
+    padding-bottom: 0;
+  }
+
+  .subtitle {
+    font-size: calc(1.5vw);
+    line-height: 2.5vw;
+    margin-left: 4vw;
+    margin-right: 20vw;
+    white-space: normal;
+    width: fit-content;
+  }
+
+  .specifics {
+    margin-left: 0;
+    text-align: left;
+    vertical-align: bottom;
+  }
+
+  .specifics h2 {
+    margin-left: 4vw;
+    font-size: calc(1rem + 1.1vw);
+  }
+
+  .specifics p {
+    margin-left: 4vw;
+    font-size: calc(0.5rem + 1.1vw);
+  }
+
+  .cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .cardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.25rem 0.1rem;
+    width: 10rem;
+    height: 15rem;
+
+  }
+
+  .cardItem:hover {
+    border: 6px solid var(--color-white);
+  }
+
+  .cardItem div {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    position: relative;
+  }
+
+  .cardItem .activity {
+    width: 100%;
+  }
+
+  .cardItem img {
+    width: 60px;
+  }
+
+  .cardItem p {
+    text-align: left;
+    width: 25%;
+    font-size: 0.65rem;
+    text-align: left;
+    height: 100%;
+  }
+
+  .speakersContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .program button {
+    display: none;
+  }
+
+  .seeProgram {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-lightgrey);
+    margin-bottom: 2rem;
+  }
+
+  .partner {
+    display: block;
+    background-color: #2e3139;
+    color: var(--color-lightgrey);
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    filter: grayscale(1px);
+    height: 100%;
+    color: var(--color-white);
+    backdrop-filter: blur(0.5rem);
+  }
+
+  .partner h2 {
+    margin: 1.5rem 0.5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    color: var(--color-lightgrey);
+  }
+
+  .partner .indicator {
+    width: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+  }
+
+  .partner ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partner li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: var(--color-lightgrey);
+    margin-right: 2rem;
+  }
+
+  .partner ul img {
+    margin-right: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-content: center;  
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-left: 4rem;
+    overflow: hidden;
+    height: 55px;
+    min-width: 200px;
+  }
+
+  footer p {
+    margin-left: 8rem;
+  }
 }
