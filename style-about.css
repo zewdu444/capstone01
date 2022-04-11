@@ -79,32 +79,32 @@ html {
 }
 
 /* ---------------Footer Section in About.html--------------- */
-.footerMobile {
+.darkFooter {
+  display: none;
+}
+
+.lightFooter {
   display: flex;
   flex-direction: row;
   align-content: center;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
-.footerMobile .logo {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin-left: 1rem;
-  overflow: hidden;
-  height: 55px;
-  min-width: 20px;
+.lightFooter img {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: cover;
+  margin-right: 1rem;
 }
 
-.footerMobile p {
-  margin-top: auto;
-  margin-bottom: auto;
-  margin-left: 0.25rem;
+.lightFooter p {
   font-size: 0.75rem;
 }
+
+
 
 /* ---------------Main Section in About.html--------------- */
 .titleAbout {
@@ -212,14 +212,13 @@ html {
 }
 
 .boxLogo {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 150px;
-  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 2px solid var(--color-lightgrey);
+  max-width: 50%;
+  max-height: 50%;
+  padding: 1rem;
   margin-bottom: 4rem;
 }
 
@@ -314,8 +313,17 @@ html {
   }
 
   .darkFooter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 0;
     background-color: var(--color-black);
     color: var(--color-lightgrey);
+  }
+
+  .lightFooter {
+    display: none;
   }
 
   .titleAbout {
@@ -375,6 +383,12 @@ html {
     margin-right: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
+  }
+
+  .boxLogo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
   }
 
   .pastEvent h2 {
