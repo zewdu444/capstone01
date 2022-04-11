@@ -72,6 +72,13 @@ html {
   margin-right: 1.5rem;
 }
 
+.lightFooter img {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
 .partnerMobile ul img {
   margin-right: 0.25rem;
   width: 1.5rem;
@@ -93,18 +100,9 @@ html {
   margin-right: 2rem;
 }
 
-.lightFooter img {
-  max-width: 40%;
-  max-height: 40%;
-  object-fit: cover;
-  margin-right: 1rem;
-}
-
 .lightFooter p {
   font-size: 0.75rem;
 }
-
-
 
 /* ---------------Main Section in About.html--------------- */
 .titleAbout {

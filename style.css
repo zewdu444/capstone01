@@ -32,7 +32,7 @@ html {
 /* ---------------Main Section--------------- */
 .bgContainer {
   background-image: url(./assets/background.jpeg);
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -513,7 +513,6 @@ footer {
     object-fit: cover;
   }
 
-
   .title {
     margin-top: 10vw;
     margin-left: 4vw;
@@ -669,6 +668,12 @@ footer {
     margin-right: 2rem;
   }
 
+  .logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
   .partner ul img {
     margin-right: 0.5rem;
     width: 2.5rem;
@@ -692,11 +697,5 @@ footer {
     overflow: hidden;
     height: 55px;
     min-width: 200px;
-  }
-
-  .logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
   }
 }
