@@ -30,26 +30,26 @@ function popup() {
   const aLink1 = document.createElement('a');
   liLink1.classList.add('liLinks');
   liLink1.classList.add('first');
-  aLink1.textContent = 'About';
+  aLink1.setAttribute('href', './index.html');
+  aLink1.textContent = 'Home';
   aLink1.addEventListener('click', () => {
-    aLink1.setAttribute('href', './about.html');
     popupContainer.style.display = 'none';
   });
   liLink1.append(aLink1);
   const liLink2 = document.createElement('li');
   const aLink2 = document.createElement('a');
   liLink2.classList.add('liLinks');
-  aLink2.setAttribute('href', './index.html#program');
-  aLink2.textContent = 'Program';
+  aLink2.textContent = 'About';
   aLink2.addEventListener('click', () => {
+    aLink2.setAttribute('href', './about.html');
     popupContainer.style.display = 'none';
   });
   liLink2.append(aLink2);
   const liLink3 = document.createElement('li');
   const aLink3 = document.createElement('a');
   liLink3.classList.add('liLinks');
-  aLink3.setAttribute('href', './index.html#speakers');
-  aLink3.textContent = 'Speakers';
+  aLink3.setAttribute('href', './index.html#program');
+  aLink3.textContent = 'Program';
   aLink3.addEventListener('click', () => {
     popupContainer.style.display = 'none';
   });
@@ -57,8 +57,8 @@ function popup() {
   const liLink4 = document.createElement('li');
   const aLink4 = document.createElement('a');
   liLink4.classList.add('liLinks');
-  aLink4.setAttribute('href', './about.html#partner');
-  aLink4.textContent = 'Partner';
+  aLink4.setAttribute('href', './index.html#speakers');
+  aLink4.textContent = 'Speakers';
   aLink4.addEventListener('click', () => {
     popupContainer.style.display = 'none';
   });
@@ -66,8 +66,8 @@ function popup() {
   const liLink5 = document.createElement('li');
   const aLink5 = document.createElement('a');
   liLink5.classList.add('liLinks');
-  aLink5.setAttribute('href', './about.html#pastEvent');
-  aLink5.textContent = 'Event';
+  aLink5.setAttribute('href', './about.html#partner');
+  aLink5.textContent = 'Partner';
   aLink5.addEventListener('click', () => {
     popupContainer.style.display = 'none';
   });
@@ -75,8 +75,8 @@ function popup() {
   const liLink6 = document.createElement('li');
   const aLink6 = document.createElement('a');
   liLink6.classList.add('liLinks');
-  aLink6.setAttribute('href', './index.html');
-  aLink6.textContent = 'Home';
+  aLink6.setAttribute('href', './about.html#pastEvent');
+  aLink6.textContent = 'Event';
   aLink6.addEventListener('click', () => {
     popupContainer.style.display = 'none';
   });

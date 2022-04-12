@@ -353,7 +353,28 @@ nav {
 }
 
 /* ---------------Footer Section--------------- */
-footer {
+.mobileFooter {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.mobileFooter img {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.mobileFooter p {
+  font-size: 0.75rem;
+}
+
+.desktopFooter {
   display: none;
 }
 
@@ -694,7 +715,11 @@ footer {
     height: 2.5rem;
   }
 
-  footer {
+  .mobileFooter {
+    display: none;
+  }
+
+  .desktopFooter {
     display: flex;
     flex-direction: row;
     align-content: center;
