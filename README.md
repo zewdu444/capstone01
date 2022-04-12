@@ -23,6 +23,9 @@
 - [x] Use objects to store and access data.
 - [x] Communicate technical concepts to other technical people.
 
+
+## Project Documentation
+- [x] Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d)
 ## Screenshots 📸
 Desktop Version - Home page
 ![homepageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935113-1aa53e3a-e3de-47a3-82e3-a254c35973b0.png)
