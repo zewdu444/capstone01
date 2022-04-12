@@ -21,31 +21,15 @@
 - [x] Use objects to store and access data.
 Communicate technical concepts to other technical people.
 
-## Screenshot 📸
-- [x] Home page
-- Desktop Version
-
-![homepageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162741539-09f2e511-f132-4c4e-82f1-1a8ff0ade035.png)
-
-- Mobile Version
-
-![homepageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162741833-703ea1d8-8934-4ab6-a7b2-63a403968a92.png)
-
-- [x] About page
-- Desktop Version
-
-![aboutpageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162742169-58b9b552-f8cd-4268-8151-222fcf63dbd2.png)
-
-- Mobile Version
-
-![aboutpageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162742301-ee0824ee-b451-4b39-bc28-b097c692c571.png)
+## Screenshots 📸
+Find the full page screenshots in the repository
 
 ## Built With 🛠️
 
 - [x] HTML, CSS and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESlint
 - [x] VS Code
-- [x] Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/) ![creative-commons-license-logo](https://user-images.githubusercontent.com/98527559/162740180-79222006-5330-49ee-a5fc-57bcd303dc1a.jpg)
+- [x] Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Live Demo 🔗
 
@@ -54,7 +38,7 @@ Click [here](https://mavericks-db.github.io/capstone01/) 👈
 
 ## Getting Started ✅
 
-To get a local copy up and running, please follow these simple steps.
+To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 

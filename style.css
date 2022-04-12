@@ -46,6 +46,16 @@ html {
   padding-bottom: 2rem;
 }
 
+.menuBar {
+  background-color: transparent;
+  backdrop-filter: blur(1px);
+  position: fixed;
+  width: 100%;
+  padding-bottom: 1rem;
+  top: 0;
+  z-index: 1;
+}
+
 .menu {
   margin-top: 1rem;
   margin-left: 1rem;
@@ -418,6 +428,10 @@ footer {
 @media (min-width: 768px) {
   .bgContainer {
     height: 100vh;
+  }
+
+  .menuBar {
+    display: none;
   }
 
   .menu {
