@@ -1,6 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # ASIA WEB CONFERENCE 2022
+![AsiaWebConf-Logo](https://user-images.githubusercontent.com/98527559/162935650-6bf80118-58e6-457c-98fa-3b6760d51857.png)
+
 ## *Microverse First Capstone Project*
 
 > This is an educational project to make a website for a web conference event with home page and about page.
@@ -19,17 +21,27 @@
 - [x] Use JavaScript to manipulate DOM elements.
 - [x] Use JavaScript events.
 - [x] Use objects to store and access data.
-Communicate technical concepts to other technical people.
+- [x] Communicate technical concepts to other technical people.
 
 ## Screenshots 📸
-Find the full page screenshots in the repository
+Desktop Version - Home page
+![homepageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935113-1aa53e3a-e3de-47a3-82e3-a254c35973b0.png)
+
+Mobile Version - Home page
+![homepageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935337-4eaff01d-2a48-4517-8a06-c052107b1e32.png)
+
+Desktop Version - About page
+![aboutpageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935473-47381a1b-21fd-4174-918e-badc824ba8c3.png)
+
+Mobile Version - About page
+![aboutpageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935545-a66279fc-a10a-4e65-989b-906a997db98e.png)
+
 
 ## Built With 🛠️
 
 - [x] HTML, CSS and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESlint
 - [x] VS Code
-- [x] Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07) under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ## Live Demo 🔗
 
@@ -67,7 +79,7 @@ $ git clone git@github.com:mavericks-db/capstone01.git
 
 ### Usage
 
-Kindly modify the files as needed. This website demonstrates in smaller devices such as mobile phones.
+Kindly modify the files as needed. This website demonstrates both desktop and mobile versions.
 
 ### Run tests
 
@@ -77,8 +89,8 @@ $ npm install
 ```
 
 ### Deployment
-This app is deployed in the GitHub Pages for easy viewing upon merged on the main branch. Please find the link in the Live Demo section.
-
+This app is deployed in the GitHub Pages for easy viewing.
+Please find the link in the Live Demo section.
 
 ## Authors
 
@@ -101,6 +113,13 @@ Give a ⭐️ if you like this project!
 
 - Microverse
 - Code Reviewers
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+  ![Designer_Cindy_Shin](https://user-images.githubusercontent.com/98527559/162937760-e8f46c98-e5b0-4a56-b268-4bb0cb6a61b9.png)
+  
+- under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
+  ![License_Creative_Commons](https://user-images.githubusercontent.com/98527559/162938258-ca5c702c-41a6-4364-adc2-20d4bc10c27e.png)
+
+  
 
 ## 📝 License
 
