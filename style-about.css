@@ -1,0 +1,413 @@
+@import url(./style.css);
+@import url('http://fonts.cdnfonts.com/css/cocogoose?styles=44178');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+  --ff-cocogoose: 'Cocogoose';
+  --ff-lato: 'Lato';
+  --color-black: #272a31;
+  --color-red: #ec5242;
+  --color-lightgrey: #d3d3d3;
+  --color-white: #fff;
+  --border-check: 1px solid crimson;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-lato);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------Partner Section in About.html--------------- */
+.partnerMobile {
+  display: block;
+  background-color: #2e3139;
+  color: var(--color-white);
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  filter: grayscale(1px);
+  height: 100%;
+  backdrop-filter: blur(0.5rem);
+}
+
+.partnerMobile h2 {
+  margin: 1.2rem 0.5rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  color: var(--color-lightgrey);
+}
+
+.partnerMobile .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.partnerMobile ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partnerMobile li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-lightgrey);
+  margin-top: 0.75rem;
+  margin-right: 1.5rem;
+}
+
+.lightFooter img {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.partnerMobile ul img {
+  margin-right: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* ---------------Footer Section in About.html--------------- */
+.darkFooter {
+  display: none;
+}
+
+.lightFooter {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 1rem 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.lightFooter p {
+  font-size: 0.75rem;
+}
+
+/* ---------------Main Section in About.html--------------- */
+.titleAbout {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  text-align: center;
+}
+
+.titleAbout h2 {
+  font-size: 1.5rem;
+}
+
+.titleAbout h1 {
+  font-family: var(--ff-cocogoose);
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  background-image: linear-gradient(150deg, #ec5242 0%, red 0%, #d98324 74%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 1rem;
+}
+
+.subtitleAbout {
+  display: block;
+  width: 90%;
+  background-color: var(--color-white);
+  opacity: 0.7;
+  border: 2px solid var(--color-lightgrey);
+  color: var(--color-black);
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5rem;
+  padding: 0.25rem;
+}
+
+.specificsAbout {
+  font-weight: 600;
+  margin-top: 1rem;
+  color: var(--color-black);
+  text-align: center;
+}
+
+.specificsAbout p {
+  font-size: 0.75rem;
+  opacity: 0.7;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.specificsAbout a {
+  text-decoration: underline;
+  color: var(--color-black);
+  opacity: 1;
+}
+
+/* ---------------Logo History Section in About.html--------------- */
+.logoHistory {
+  background-color: var(--color-white);
+  opacity: 0.9;
+  filter: grayscale(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.logoHistory .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.logoHistory h2 {
+  margin-top: 2rem;
+  padding: 0 4rem;
+}
+
+.logoHistoryMobile {
+  color: var(--color-black);
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+}
+
+.logoHistoryDesktop {
+  display: none;
+}
+
+.boxLogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid var(--color-lightgrey);
+  max-width: 50%;
+  max-height: 50%;
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+
+/* ---------------Past Event Section in About.html--------------- */
+.pastEvent {
+  border-top: 2px solid var(--color-lightgrey);
+  background-color: var(--color-white);
+  opacity: 0.9;
+  filter: grayscale(1px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  color: var(--color-black);
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+.pastEvent .indicator {
+  width: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+.pastEvent h2 {
+  margin-top: 2rem;
+  padding: 0 4rem;
+  font-size: 1.5rem;
+}
+
+.pastEvent p {
+  color: var(--color-black);
+  padding: 0 3rem;
+  opacity: 0.7;
+  margin-bottom: 3rem;
+}
+
+.pastEvent ul {
+  list-style-type: none;
+}
+
+.pastEvent li {
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 2rem;
+  transform: scale(1.1);
+}
+
+.pastEvent h4 {
+  font-size: 0.75rem;
+}
+
+.event01 {
+  background-image: url(./assets/event01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset -100vw -100vh #ec534280;
+}
+
+.event02 {
+  background-image: url(./assets/event02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset -100vw -100vh #ec534280;
+}
+
+.pastEvent li:hover {
+  background-size: 110%;
+  box-shadow: none;
+  transition: all 350ms ease-out;
+}
+
+/* ---------------Media Query--------------- */
+@media (min-width: 768px) {
+  .partnerMobile {
+    display: none;
+  }
+
+  .darkFooter {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem 0;
+    background-color: var(--color-black);
+    color: var(--color-lightgrey);
+  }
+
+  .lightFooter {
+    display: none;
+  }
+
+  .titleAbout {
+    margin-top: 7rem;
+  }
+
+  .titleAbout h2 {
+    font-size: 2.5rem;
+  }
+
+  .titleAbout h1 {
+    font-size: 3.5rem;
+  }
+
+  .subtitleAbout {
+    width: 60%;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .specificsAbout {
+    margin-top: 3rem;
+  }
+
+  .specificsAbout p {
+    font-size: 0.75rem;
+    opacity: 0.7;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .specificsAbout a {
+    text-decoration: underline;
+    color: var(--color-black);
+    opacity: 1;
+  }
+
+  .logoHistory h2 {
+    font-size: 2rem;
+  }
+
+  .logoHistory .indicator {
+    width: 2.5rem;
+  }
+
+  .logoHistoryMobile {
+    display: none;
+  }
+
+  .logoHistoryDesktop {
+    display: block;
+    color: var(--color-black);
+    padding: 0 3rem;
+    opacity: 0.7;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .boxLogo {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+  }
+
+  .pastEvent h2 {
+    font-size: 2rem;
+  }
+
+  .pastEvent .indicator {
+    width: 2.5rem;
+  }
+
+  .pastEvent ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .pastEvent li {
+    height: 10rem;
+    width: 20rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1.5rem;
+  }
+}

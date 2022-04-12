@@ -1,62 +1,112 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# ASIA WEB CONFERENCE 2022
+![AsiaWebConf-Logo](https://user-images.githubusercontent.com/98527559/162935650-6bf80118-58e6-457c-98fa-3b6760d51857.png)
 
-> Description the project.
+## *Microverse First Capstone Project*
+
+> This is an educational project to make a website for a web conference event with home page and about page.
+
+## Learning Objectives 🔖
+
+- [x] Use semantic HTML tags.
+- [x] Apply best practices in HTML code.
+- [x] Use CSS selectors correctly.
+- [x] Use CSS box model.
+- [x] Use Flexbox to place elements in the page.
+- [x] Demonstrate ability to create UIs
+- [x] adaptable to different screen sizes using media queries.
+- [x] Use GitHub Pages to deploy web pages.
+- [x] Apply JavaScript best practices and language style guides in code.
+- [x] Use JavaScript to manipulate DOM elements.
+- [x] Use JavaScript events.
+- [x] Use objects to store and access data.
+- [x] Communicate technical concepts to other technical people.
 
 
-## Built With
+## Project Documentation
+- [x] Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d)
+## Screenshots 📸
+Desktop Version - Home page
+![homepageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935113-1aa53e3a-e3de-47a3-82e3-a254c35973b0.png)
 
-- Major languages
-- Frameworks
-- Technologies used
+Mobile Version - Home page
+![homepageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935337-4eaff01d-2a48-4517-8a06-c052107b1e32.png)
 
-## Live Demo (if available)
+Desktop Version - About page
+![aboutpageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935473-47381a1b-21fd-4174-918e-badc824ba8c3.png)
 
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Mobile Version - About page
+![aboutpageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935545-a66279fc-a10a-4e65-989b-906a997db98e.png)
 
 
-To get a local copy up and running follow these simple example steps.
+## Built With 🛠️
+
+- [x] HTML, CSS and JavaScript
+- [x] Linters: Lighthouse, Webhint, Stylelint and ESlint
+- [x] VS Code
+
+## Live Demo 🔗
+
+Click [here](https://mavericks-db.github.io/capstone01/) 👈
+
+
+## Getting Started ✅
+
+To get a local copy up and running, follow these simple steps.
 
 ### Prerequisites
 
+Install a code editor like Visual Studio Code. Install Git and Node.js.
+
+You can check if Git is installed by running the following command in the terminal.
+```
+$ git --version
+```
+
+Likewise for Node.js and npm for package installation.
+```
+$ node --version && npm --version
+```
+
 ### Setup
+Clone the repository using the GitHub link provided below.
 
 ### Install
 
+In the terminal, go to your file directory and run this command.
+
+```
+$ git clone git@github.com:mavericks-db/capstone01.git
+```
+
 ### Usage
+
+Kindly modify the files as needed. This website demonstrates both desktop and mobile versions.
 
 ### Run tests
 
+To check for linters, use the files provided by Microverse. A GitHub action is also set to run during pull request.
+```
+$ npm install
+```
+
 ### Deployment
-
-
+This app is deployed in the GitHub Pages for easy viewing.
+Please find the link in the Live Demo section.
 
 ## Authors
 
-👤 **Author1**
+👤 **Mavericks Balitaan** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+  [![GitHub Badge](https://img.shields.io/badge/-mavericks--db-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/mavericks-db) [![Twitter Badge](https://img.shields.io/badge/-mavericks__db-white?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/mavericks_db) [![LinkedIn Badge](https://img.shields.io/badge/-mavericks--db-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/mavericks-db/)[![LinkedIn Badge](https://img.shields.io/badge/-mavericks--db-white?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://www.linkedin.com/in/mavericks-db/)
+[![Gmail Badge](https://img.shields.io/badge/-@balitaanmavericks-white?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:balitaanmavericks@gmail.com)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/mavericks-db/capstone01/issues).
 
 ## Show your support
 
@@ -64,9 +114,15 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
+- Code Reviewers
+- Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
+  ![Designer_Cindy_Shin](https://user-images.githubusercontent.com/98527559/162937760-e8f46c98-e5b0-4a56-b268-4bb0cb6a61b9.png)
+  
+- under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
+  ![License_Creative_Commons](https://user-images.githubusercontent.com/98527559/162938258-ca5c702c-41a6-4364-adc2-20d4bc10c27e.png)
+
+  
 
 ## 📝 License
 
