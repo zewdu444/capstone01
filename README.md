@@ -23,22 +23,14 @@
 - [x] Use objects to store and access data.
 - [x] Communicate technical concepts to other technical people.
 
-
 ## Project Documentation
 - [x] Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d)
+
+## Website Mockup 📱 💻 🖥️
+
+
 ## Screenshots 📸
-Desktop Version - Home page
-![homepageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935113-1aa53e3a-e3de-47a3-82e3-a254c35973b0.png)
-
-Mobile Version - Home page
-![homepageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935337-4eaff01d-2a48-4517-8a06-c052107b1e32.png)
-
-Desktop Version - About page
-![aboutpageDesktop_screenshot](https://user-images.githubusercontent.com/98527559/162935473-47381a1b-21fd-4174-918e-badc824ba8c3.png)
-
-Mobile Version - About page
-![aboutpageMobile_screenshot](https://user-images.githubusercontent.com/98527559/162935545-a66279fc-a10a-4e65-989b-906a997db98e.png)
-
+Mobile and desktop version screenshots can be found in the repository.
 
 ## Built With 🛠️
 

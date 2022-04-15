@@ -447,10 +447,6 @@ nav {
 
 /* ---------------Media Query--------------- */
 @media (min-width: 768px) {
-  .bgContainer {
-    height: 100vh;
-  }
-
   .menuBar {
     display: none;
   }
