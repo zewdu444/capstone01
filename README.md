@@ -27,7 +27,7 @@
 - [x] Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d)
 
 ## Website Mockup 📱 💻 🖥️
-
+![all-devices-black](https://user-images.githubusercontent.com/98527559/166163767-7e50ab9c-0d97-4a38-a519-fce9a76943b7.png)
 
 ## Screenshots 📸
 Mobile and desktop version screenshots can be found in the repository.
@@ -36,14 +36,14 @@ Mobile and desktop version screenshots can be found in the repository.
 
 - [x] HTML, CSS and JavaScript
 - [x] Linters: Lighthouse, Webhint, Stylelint and ESlint
-- [x] VS Code
+- [x] Code Editor: VS Code
 
 ## Live Demo 🔗
 
 Check out the live demo [here](https://mavericks-db.github.io/capstone01/) 👈
 
 
-## Getting Started ✅
+## Getting Started
 
 To get a local copy up and running, follow these simple steps.
 
@@ -88,7 +88,7 @@ $ npm install
 This app is deployed in the GitHub Pages for easy viewing.
 Please find the link in the Live Demo section.
 
-## Authors
+## Author
 
 👤 **Mavericks Balitaan** <img src="https://emojis.slackmojis.com/emojis/images/1531849430/4246/blob-sunglasses.gif?1531849430" width="20"/>
 
@@ -110,7 +110,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Microverse
+- [Microverse](https://www.microverse.org/)
 - Code Reviewers
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
   ![Designer_Cindy_Shin](https://user-images.githubusercontent.com/98527559/162937760-e8f46c98-e5b0-4a56-b268-4bb0cb6a61b9.png)
