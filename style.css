@@ -491,6 +491,11 @@ nav {
     cursor: pointer;
   }
 
+  nav li a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
   .header a {
     text-decoration: none;
     color: var(--color-black);
