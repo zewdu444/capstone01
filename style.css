@@ -91,7 +91,8 @@ nav {
   font-family: var(--ff-cocogoose);
   font-size: 2rem;
   letter-spacing: 0.1rem;
-  background-image: linear-gradient(150deg, #ec5242 0%, red 0%, #d98324 74%);
+  /* background-image: linear-gradient(150deg, #ec5242 0%, red 0%, #d98324 74%); */
+  background-image: url(./assets/redbg.jpg);
   background-clip: border-box;
   -webkit-background-clip: text;
   color: transparent;
@@ -603,6 +604,7 @@ nav {
     margin: 0.25rem 0.1rem;
     width: 10rem;
     height: 15rem;
+    border: 6px solid transparent;
   }
 
   .cardItem:hover {
@@ -618,10 +620,6 @@ nav {
     margin-right: 0;
     text-align: center;
     position: relative;
-  }
-
-  .cardItem .activity {
-    width: 100%;
   }
 
   .cardItem img {
