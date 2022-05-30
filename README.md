@@ -27,7 +27,7 @@
 - [x] Here is the loom video [link](https://www.loom.com/share/55f95314ade34700afcdbecec5137d7d)
 
 ## Website Mockup 📱 💻 🖥️
-![all-devices-black](https://user-images.githubusercontent.com/98527559/166163767-7e50ab9c-0d97-4a38-a519-fce9a76943b7.png)
+![Screen Shot 2022-05-30 at 21 04 26](https://user-images.githubusercontent.com/98527559/171028995-c3a99b54-5f1f-42f1-833d-17a8ed6be926.png)
 
 ## Screenshots 📸
 Mobile and desktop version screenshots can be found in the repository.
@@ -114,11 +114,11 @@ Give a ⭐️ if you like this project!
 - Code Reviewers
 - Original design idea by [Cindy Shin in Behance](https://www.behance.net/adagio07)
   ![Designer_Cindy_Shin](https://user-images.githubusercontent.com/98527559/162937760-e8f46c98-e5b0-4a56-b268-4bb0cb6a61b9.png)
-  
+
 - under the [Creative Commons license](https://creativecommons.org/licenses/by-nc/4.0/)
   ![License_Creative_Commons](https://user-images.githubusercontent.com/98527559/162938258-ca5c702c-41a6-4364-adc2-20d4bc10c27e.png)
 
-  
+
 
 ## 📝 License
 
